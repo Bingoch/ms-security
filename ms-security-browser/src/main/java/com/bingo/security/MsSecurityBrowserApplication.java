@@ -1,0 +1,13 @@
+package com.bingo.security;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MsSecurityBrowserApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MsSecurityBrowserApplication.class, args);
+    }
+
+}
