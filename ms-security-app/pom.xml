@@ -6,7 +6,7 @@
         <groupId>com.bingo.security</groupId>
         <artifactId>ms-security</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>..</relativePath>
     </parent>
     <groupId>com.bingo.security</groupId>
     <artifactId>ms-security-app</artifactId>
