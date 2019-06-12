@@ -1,6 +1,7 @@
-package com.bingo.security.controller;
+package com.bingo.security.web.controller;
 
 import com.bingo.security.domain.User;
+import com.bingo.security.exception.UserNotExistException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping
-    public User getUser(@RequestParam String name){
-        return new User(name,10);
+    public User getUser(@RequestParam Integer id){
+        throw new UserNotExistException(1);
     }
 }

@@ -5,6 +5,7 @@ package com.bingo.security.domain;
  * @date 2019/5/23 14:24
  */
 public class User {
+    private Integer id;
     private String name;
     private Integer age;
 
@@ -14,6 +15,7 @@ public class User {
     public User(String name, Integer age) {
         this.name = name;
         this.age = age;
+        this.id = id;
     }
 
     public String getName() {
@@ -30,5 +32,13 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

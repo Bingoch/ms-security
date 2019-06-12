@@ -29,13 +29,13 @@ public class DemoApplicationTests {
 
     @Test
     public void contextLoads() throws Exception {
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/user")
-                .param("name","zhangsan")
+        String result = mockMvc.perform(MockMvcRequestBuilders.get("/user")
+                .param("id","1")
                 .accept(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print())
-                .andReturn();
-        System.out.println(result.getResponse().getContentAsString());
+                .andReturn().getResponse().getContentAsString();
+        System.out.println(result);
     }
 
 }
